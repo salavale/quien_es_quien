@@ -1,0 +1,17 @@
+Mujer	Ojos marrones	Ojos azules	Pelo negro	Pelo rubio	Tiene gafas	Nombre personaje	Imagen
+0	1	0	0	1	0	Antonio	datos/caras_graph/Antonio.png
+1	0	1	0	1	0	Josefa	datos/caras_graph/Josefa.png
+1	0	1	0	1	1	Francisca	datos/caras_graph/Francisca.png
+0	0	1	0	1	0	Luis	datos/caras_graph/Luis.png
+0	0	1	0	1	1	Pedro	datos/caras_graph/Pedro.png
+0	0	1	1	0	0	Jaime	datos/caras_graph/Jaime.png
+0	1	0	1	0	0	Alvaro	datos/caras_graph/Alvaro.png
+1	1	0	1	0	1	Marta	datos/caras_graph/Marta.png
+0	1	0	1	0	1	Eloy	datos/caras_graph/Eloy.png
+0	1	0	0	1	1	Raul	datos/caras_graph/Raul.png
+1	1	0	0	1	0	Sandra	datos/caras_graph/Sandra.png
+1	1	0	0	1	1	Sonia	datos/caras_graph/Sonia.png
+1	1	0	1	0	0	Laura	datos/caras_graph/Laura.png
+1	0	1	1	0	0	Azucena	datos/caras_graph/Azucena.png
+1	0	1	1	0	1	Aitana	datos/caras_graph/Aitana.png
+0	0	1	1	0	1	Jose	datos/caras_graph/Jose.png

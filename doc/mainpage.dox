@@ -1,0 +1,59 @@
+/*! \mainpage El Juego de Quien es Quien
+
+@image html Quien-es-quien.png "Quien es Quien"
+
+# Información sobre Doxygen
+Doxygen admite el uso de la [sintaxis de Markdown (Consulta aquí los comandos básicos)](https://www.markdownguide.org/basic-syntax).
+
+Así como el uso de  <a href="https://htmlcheatsheet.com/">sintaxis <strong>HTML</strong></a>. Esto es especialmente útil
+para aquellos aspectos que Markdown no permite modificar, como el <span  style="color:red">color</span>. Aunque es buena idea evitarlo en la medida de lo posible, por dos
+motivos:
+
+1. <span style="font-size:1.1em">Hace el código <strong>poco</strong> <span style="  background-image: linear-gradient(to left, #4285f4, #34a853, #fbbc05, #ea4335); -webkit-background-clip: text; color: transparent;"> <strong> LEGIBLE </strong> </span></span>
+2. La idea detrás de Markdown es separar _aspecto_ y _contenido_. Y es una __gran idea__.
+
+La forma más correcta de modificar el aspecto debería ser mediante un documento ``.css`` configurado en el archivo ``Doxyfile.in``.
+Si te interesa, puedes echarle un vistazo a la [documentación](https://www.doxygen.nl/manual/customize.html) o a
+temas customizados como [este](https://jothepro.github.io/doxygen-awesome-css/). Aunque el tema por defecto nos parece
+perfecto, _CLÁSICO_. Así puedes centrarte en el contenido.
+
+Por último, lo hemos visto en clase y hay suficientes ejemplos en el código fuente proporcionado, pero puedes consultar la
+mayor parte de la sintaxis de Doxygen para comentar código en su
+[documentación](https://www.doxygen.nl/manual/docblocks.html).
+
+# Introducción
+
+El objetivo de esta práctica es utilizar un TDA Árbol Binario(TDA bintree) para implementar un jugador automático para el juego "¿Quién es Quién?".
+En este juego, disponemos de un tablero que contiene una serie de personajes identificados por su nombre una serie de características propias de cada personaje. Dos personajes diferentes no podrán ser identificados por las mismas características.
+
+En particular, el código implementado crea un jugador automático que realiza preguntas, recoge la respuesta (s/n) del jugador humano y continúa haciendo preguntas hasta deducir el personaje con el que el jugador humano está jugando.
+
+### Tablero de personajes
+El tablero de los personajes seguirá el formato de una matriz que guarda en cada fila los atributos de cada jugador, y en cada fila, los datos de un determinado atributo. Un atributo será un valor booleano que cada personaje puede tener como cierto o no.
+
+@image html matriz_atributos.png
+
+Un ejemplo de una matriz dados 5 personajes y 4 atributos podría ser la siguiente
+
+@image html ejemplo_matriz.png
+
+### Jugador automático
+El jugador automático recorrerá un arbol donde cada hoja del árbol representará un personaje, y cada nodo, una pregunta sobre un atributo.
+
+# Ejecutables
+Para la implementación del juego, se han usado las siguientes clases:
+### Clase bintree
+Implementa un árbol binario de un dato de tipo T (arbitrario)
+### Clase consola
+Permite mostrar y leer texto de una ventana gráfica.
+### Clase Pregunta
+Contiene una serie de datos como la pregunta que se va a hacer, el numero de personajes que quedan sin descartar tras la pregunta, o en el caso de que solo quede un personaje, qué personaje es.
+### Clase tablerografico
+Realiza una representación gráfica de una tabla. La usaremos para poder realizar la representación del tablero de personajes
+### Clase Ventana
+Es un objeto formado por el par consola y tablerografico
+### Clase quienesquien
+Esta clase será la encargada de crear el arbol que manejará el jugador automático, y que se encargará de manejar el manejo del juego y el control de las instrucciones del jugador automático
+
+*/
+
